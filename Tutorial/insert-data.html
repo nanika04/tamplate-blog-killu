@@ -1,0 +1,146 @@
+<html>
+<head>
+  <title>Henka04</title>
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../materialize/font-awesome/css/font-awesome.min.css">
+  <!-- materialize -->
+  <link href="../materialize/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../materialize/css/materialize.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../materialize/css/materialize.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="../materialize/js/materialize.js"></script>
+  <script src="../materialize/js/init.js"></script>
+  <script src="../materialize/js/jquery-2.1.1.min.js"></script>
+  <script src="../materialize/js/materialize.min.js"></script>
+
+  <link href="../mycss.css" rel="stylesheet" type="text/css" media="all" />
+
+  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css">
+  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeMidnight.css" rel="stylesheet" type="text/css">
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCpp.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushRuby.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushVb.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPerl.js" type="text/javascript"></script>
+  <script language="javascript">
+  SyntaxHighlighter.config.bloggerMode = true;
+  SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
+  SyntaxHighlighter.all();
+  </script>
+
+</head>
+<body>
+<div class="header">
+  <i style="font-size:4em; color:white;" class="fa fa-code">
+    <!-- <span style="font-family:Aclonica;">HENKA 04</span> -->
+  </i>
+  <div class="tab">
+    <a style="background-color:#20759e;" class='dropdown-button btn' href="../index.html">HOME</a>
+    <a style="background-color:#20759e;" class='dropdown-button btn' data-activates='dropdown2' href="">TUTORIAL <i class="fa fa-angle-down" aria-hidden="true"></i>
+</a>
+      <ul id='dropdown2' class='dropdown-content'>
+        <li><a href="../tutorial-css.html">CSS</a></li>
+        <li><a href="../tutorial-php">PHP</a></li>
+        <li><a href="../tutorial-android.html">Android Studio</a></li>
+      </ul>
+
+  </div>
+</div>
+
+<center>
+<div class="isi">
+  Saya anggap anda telah bisa membuat koneksi kedatabase SQL. Jadi kita akan langsung kequery INSERT pada SQL
+  yang mana fungsi nya untuk menambahkan data dari inputan PHP ke database SQL. Oke tanpa basa basi langsung saja
+  kecara pertama.<br>
+  <div class="isi-1">
+    $query = "INSERT INTO namatable (field1,field2,field3) VALUE ('ayam','naga','singa')"
+  </div>
+  <i>
+    keterangan :
+    1.$query = nama vaiabel untuk query sql insert<br>
+    2.namatable = isikan sesuai nama table didatabase kalian sesuai yang ingin kalian masukan data.<br>
+    3.field1,field2,field3 = nama field didalam table yang ingin kalian masukan data.<br>
+    4.'ayam','naga','singa' = nilai yang ingin kalian masukan.<br>
+    urutan dari value sesuaikan dengan urutan field database kalian.
+ </i>
+   selanjutanya kita beri perintah untuk menjalankan query tersebut
+  <div class="isi-2">
+     mysqli_query($link,$query);
+  </div>
+  <i>
+   keterangan :
+   1.$query = nama vaiabel query insert tadi<br>
+   2.$link = nama variabel koneksi kedatabase.<br>
+  </i>
+  nah sekarang data telah ditambahkan kedalam database.<br>
+
+  Kalau ada yang salah tolong komentar nya ya.. Selamat mencoba. ^_^
+  <p>
+
+  <div id="disqus_thread"></div>
+<script>
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//akhmadsyarif.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+</center>
+
+<div class="footer">
+  <div class="footer-1">
+    <div class="footer-isi1">
+      <i style="font-size:2em;" class="fa fa-lightbulb-o"></i><p>
+      Dari pada loe nongkrong nongkrong gak jelas kecafe sana sini dan uang jajan loe habis
+      mending loe berkreatifitas diweb.<br>
+      Seperti nulis blog, bikin tamplate blog, bikin website atau bikin program/aplikasi mobile.<br>
+      Itu lebih berguna, dan bisa menghasilkan uang.
+    </div>
+
+    <div class="footer-isi2">
+      <img src="../chibi_killua.jpg"> Killua Henka
+    </div>
+    </center>
+
+  </div>
+
+    © 2016 Henka . All Rights Reserved | Design by Akhmad Syarif
+</div>
+
+<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+   <a class="btn-floating btn-large red">
+     <i class="large material-icons">assignment_ind</i>
+   </a>
+   <ul>
+     <li><a href="https://plus.google.com/u/0/118049436864010843563/posts" class="btn-floating red"><i class="fa fa-google"></i></a></li>
+     <li><a href="https://www.facebook.com/syarif.likebmxinsyaalahforever" class="btn-floating blue"><i class="fa fa-facebook"></i></a></li>
+     <li><a href="https://www.instagram.com/akhmadsyarif10/" class="btn-floating orange"><i class="fa fa-instagram"></i></a></li>
+   </ul>
+ </div>
+
+
+
+
+</body>
+</html>

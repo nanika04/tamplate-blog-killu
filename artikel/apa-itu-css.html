@@ -1,0 +1,195 @@
+<html>
+<head>
+  <title>Henka04</title>
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../materialize/font-awesome/css/font-awesome.min.css">
+  <!-- materialize -->
+  <link href="../materialize/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../materialize/css/materialize.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../materialize/css/materialize.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="../materialize/js/materialize.js"></script>
+  <script src="../materialize/js/init.js"></script>
+  <script src="../materialize/js/jquery-2.1.1.min.js"></script>
+  <script src="../materialize/js/materialize.min.js"></script>
+
+  <link href="../mycss.css" rel="stylesheet" type="text/css" media="all" />
+
+  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css">
+  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeMidnight.css" rel="stylesheet" type="text/css">
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCpp.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushRuby.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushVb.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPerl.js" type="text/javascript"></script>
+  <script language="javascript">
+  SyntaxHighlighter.config.bloggerMode = true;
+  SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
+  SyntaxHighlighter.all();
+  </script>
+</head>
+<body>
+<div class="header">
+  <i style="font-size:4em; color:white;" class="fa fa-code">
+    <!-- <span style="font-family:Aclonica;">HENKA 04</span> -->
+  </i>
+  <div class="tab">
+    <a style="background-color:#20759e;" class='dropdown-button btn' href="../index.html">HOME</a>
+    <a style="background-color:#20759e;" class='dropdown-button btn' data-activates='dropdown2' href="">TUTORIAL <i class="fa fa-angle-down" aria-hidden="true"></i>
+</a>
+      <ul id='dropdown2' class='dropdown-content'>
+        <li><a href="../tutorial-css.html">CSS</a></li>
+        <li><a href="../tutorial-php">PHP</a></li>
+        <li><a href="../tutorial-android.html">Android Studio</a></li>
+      </ul>
+
+  </div>
+</div>
+
+<center>
+<div class="isi">
+  <center><img style="width:50%;" src="../image/css.jpg"></center><p>
+    CSS adalah singkatan dari Cascading Style Sheets. Berisi rangkaian instruksi yang kita tentukan
+    untuk mempercantik tampilan web. Perancangan desain text/tampilan web dapat dilakukan dengan mendefinisikan
+    fonts (huruf) , colors (warna), margins (ukuran), latar belakang (background), ukuran font (font sizes) dan lain-lain.
+    Elemen-elemen seperti colors (warna) , fonts (huruf), sizes (ukuran) dan spacing (jarak) disebut juga styles.
+    Cascading Style Sheets juga bisa berarti meletakkan styles yang berbeda pada layers (lapisan) yang berbeda.
+    CSS terdiri dari style sheet yang memberitahukan browser bagaimana suatu dokumen akan disajikan.  Fitur-fitur baru pada halaman
+    web lama dapat ditambahkan dengan bantuan style sheet.  Saat menggunakan CSS, Anda tidak perlu menulis font, color atau size
+    pada setiap paragraf, atau pada setiap dokumen. Setelah Anda membuat sebuah style sheet, Anda dapat menyimpan kode tersebut sekali
+    saja dan dapat kembali menggunakannya bila diperlukan.
+    <br>
+    Contoh sintak CSS internal :<p>
+      <pre class="brush: css">
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;style&gt;
+              h1{
+                color:red;
+              }
+            &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;Text H1&lt;/h1&gt;
+          &lt;/body&gt;
+        &lt;html&gt;>
+      </pre>
+      <br>
+    Contoh sintak CSS inline : <p>
+      <pre class="brush: css">
+        &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;CSS&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1 style=&quot;color:blue&quot;&gt;Text H1&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </pre>
+      <br>
+    Contoh sintak CSS external :<p>
+    #Pertama bikin file nama_file.html tambahkan &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;nama_file.css&quot;&gt;
+    kedalam html dan letakkan diatas &lt;/head&gt; seperti dibawah ini :
+      <pre class="brush: css">
+        &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;CSS&lt;/title&gt;
+          &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;nama_file.css&quot;&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Text H1&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </pre>
+      nama_file.css pada href=&quot;nama_file.css&quot;&gt; sesuaikan dengan nama file css anda.
+      <br>
+    #Kedua bikin file nama_file.css dan copy kode dibawah ini :
+      <pre class="brush: css">
+        h1{
+          font-size:15px;
+        }
+      </pre>
+      <br>
+      Selanjutnya kita akan mengenal nama-nama setiap bagian CSS :
+      <pre class="brush: css">
+        h1{
+          font-size:15px;
+        }
+      </pre>
+      <ul>
+        <li>h1 -> Selector</li>
+        <li>{ } -> Deklarasi</li>
+        <li>font-size -> Properti</li>
+        <li>15px -> Nilai/Value</li>
+      </ul>
+      <br>
+      Sekian dan terimakasih, semoga bermanfaat. ^_^
+
+      <div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//akhmadsyarif.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+</center>
+
+<div class="footer">
+  <div class="footer-1">
+    <div class="footer-isi1">
+      <i style="font-size:2em;" class="fa fa-lightbulb-o"></i><p>
+      Dari pada loe nongkrong nongkrong gak jelas kecafe sana sini dan uang jajan loe habis
+      mending loe berkreatifitas diweb.<br>
+      Seperti nulis blog, bikin tamplate blog, bikin website atau bikin program/aplikasi mobile.<br>
+      Itu lebih berguna, dan bisa menghasilkan uang.
+    </div>
+
+    <div class="footer-isi2">
+      <img src="../chibi_killua.jpg"> Killua Henka
+    </div>
+    </center>
+
+  </div>
+
+    © 2016 Henka . All Rights Reserved | Design by Akhmad Syarif
+</div>
+
+<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+   <a class="btn-floating btn-large red">
+     <i class="large material-icons">assignment_ind</i>
+   </a>
+   <ul>
+     <li><a href="https://plus.google.com/u/0/118049436864010843563/posts" class="btn-floating red"><i class="fa fa-google"></i></a></li>
+     <li><a href="https://www.facebook.com/syarif.likebmxinsyaalahforever" class="btn-floating blue"><i class="fa fa-facebook"></i></a></li>
+     <li><a href="https://www.instagram.com/akhmadsyarif10/" class="btn-floating orange"><i class="fa fa-instagram"></i></a></li>
+   </ul>
+ </div>
+
+
+
+
+</body>
+</html>
